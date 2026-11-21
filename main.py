@@ -22,9 +22,9 @@ from pathlib import Path
 TEXT = """She holds the sock up to the lamp
 and finds the thin place.
 She threads the needle.
-In, out, in, out \u2014
+In, out, in, out,
 the hole closes stitch by stitch.
-She knots the thread and snips it close.
+She knots the thread and snips it.
 The sock goes back in the drawer,
 mended, and warm again."""
 
@@ -39,7 +39,14 @@ def main() -> None:
     assert 1 <= len(TEXT) <= 280, f"entry is {len(TEXT)} code points"
     assert TEXT.strip(), "entry must not be only whitespace"
 
-    (out_dir / "entry.txt").write_text(TEXT, encoding="utf-8")
+    target = out_dir / "entry.txt"
+    target.write_text(TEXT, encoding="utf-8")
+
+    # Read it back and re-check the gate on the bytes actually written,
+    # so a bad write can never silently pass as a valid entry.
+    written = target.read_text(encoding="utf-8")
+    assert written == TEXT, "entry.txt differs from the entry text"
+    assert 1 <= len(written) <= 280, "entry.txt fails the gate"
 
 
 if __name__ == "__main__":

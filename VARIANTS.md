@@ -55,11 +55,17 @@ goes. He watches it round the bend, small and white against the dark
 water, until the stream takes it out of sight, and the afternoon is
 quiet again.
 
-### V5 — Darning a sock (CHOSEN)
+### V5 — Darning a sock (CHOSEN, revised once after the first run)
 She holds the sock up to the lamp and finds the thin place. She threads
-the needle. In, out, in, out — the hole closes stitch by stitch. She
-knots the thread and snips it close. The sock goes back in the drawer,
+the needle. In, out, in, out, the hole closes stitch by stitch. She
+knots the thread and snips it. The sock goes back in the drawer,
 mended, and warm again.
+
+Revision notes: the first draft ended the stitch line with an em dash and
+kept "snips it close" — the dash hung at the line end and "close" added
+nothing, so both were cut (the brief's criterion 3: none that could be
+cut). The program also re-reads entry.txt after writing and re-checks
+the gate on the bytes actually written.
 
 Why it wins: a real difficulty (the hole) closed by patient rhythm;
 "in, out, in, out" is the slowing sound itself; every word is concrete
